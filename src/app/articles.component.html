@@ -1,0 +1,13 @@
+<h2>Articles</h2>
+<p style="color: red;" *ngIf="msg.length > 0">{{msg}}</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Title</th>
+    <th>Category</th>
+  </tr>
+  <tr *ngFor="let article of articlesList">
+    <td>{{article.title}}</td>
+    <td>{{article.category}}</td>
+  </tr>
+</table>
